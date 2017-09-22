@@ -28,6 +28,7 @@ project :
   github : https://github.com/etaos/avrupload
   gitlab : https://git.bietje.net/etaos/avrupload
   issue : https://git.bietje.net/etaos/avrupload/issues/new
+  gems  : https://rubygems.org/gems/avrupload
 
 leftmenu:
   url1:
