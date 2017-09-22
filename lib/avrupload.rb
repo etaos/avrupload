@@ -90,7 +90,7 @@ module AvrUpload
 		    end
 
 		    p.on_tail('-v', '--version', 'Show the version number') do
-		      puts "AVR uploader #{ETAOS::VERSION}"
+		      puts "AVR uploader #{AvrUpload::VERSION}"
 		      exit
 		    end
 		  end
