@@ -1,46 +1,42 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: AVRUpload
+tagline: Uploading without a hassle
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## About
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+AVR upload is a frontend for `avrdude` for Linux installations with a difficult
+TTY. If `avrdude` is unable to upload your hex files due to a time-out, chances
+are avrupload is able to perform the upload instead.
 
-## Update Author Attributes
+## Installation
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+Add this line to your application's Gemfile:
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+```ruby
+gem 'avrupload'
+```
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+And then execute:
 
-    $ rm -rf _posts/core-samples
+    $ bundle
 
-Here's a sample "posts list".
+Or install it yourself as:
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+    $ gem install avrupload
 
-## To-Do
+## Development
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+After checking out the repo, run `bin/setup` to install dependencies. Then, run
+`rake spec` to run the tests. You can also run `bin/console` for an interactive
+prompt that will allow you to experiment.
 
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://git.bietje.net/etaos/avrupload.
+This project is intended to be a safe, welcoming space for collaboration,
+and contributors are expected to adhere to the
+[Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
