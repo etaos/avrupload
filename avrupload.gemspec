@@ -8,12 +8,17 @@ Gem::Specification.new do |spec|
   spec.version       = AvrUpload::VERSION
   spec.authors       = ["Michel Megens"]
   spec.email         = ["dev@bietje.net"]
+  spec.license       = "GPLv3"
 
   spec.summary       = %q{AVRdude for PC with difficult behaviour}
   spec.description   = "avrupload enforces certain TTY settings before uploading hex files using avrdude"
   spec.homepage      = "http://etaos.bietje.net"
 
   spec.files         = [
+    'bin/avrupload',
+    'lib/avrupload.rb',
+    'lib/avrupload/avrdudeproxy.rb',
+    'lib/avrupload/version.rb'
   ]
 
   spec.bindir        = 'bin'
